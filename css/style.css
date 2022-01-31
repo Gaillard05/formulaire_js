@@ -1,0 +1,92 @@
+body{
+    background-color: blueviolet;
+}
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(39, 38, 38);
+    text-shadow:rgb(241, 240, 237) 1px 0px 10px;
+}
+.conteneur{
+    margin: 5px auto;
+    width: 50%;
+    padding: 10px;
+}
+.group{
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+}
+form{
+    background-color: beige;
+    border: solid 1px black;
+    box-shadow: -1em 0.4em rgb(56, 56, 56);
+}
+.champs{
+    margin: 10px;
+}
+input{
+    border-radius: 10px;
+    font-family:"Sriracha",cursive;
+}
+.box label{
+    width: 10em;
+    display: inline-block;
+    text-align:right;
+    margin-right: 1.5em;
+}
+label{
+    width: 10em;
+    display: inline-block;
+    margin-right: 1.5em;
+    font-family:"Sriracha",cursive;
+    text-align: right;
+}
+legend{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+textarea{
+    width: 50%;
+}
+.button, .text, legend{
+    text-align: center;
+}
+#valid, #erreurs{
+    background-color: honeydew;
+}
+.divError{
+    border: 2px solid red;
+}
+#erreurs::first-line, #valid::first-line {
+    text-decoration: underline;
+}
+.error{
+    color: red;
+}
+.sucess{
+    color: green;
+}
+input[type="submit"]{
+    width: 100px;
+    background-color:rgb(151, 151, 151);
+    transition: width 2s linear 5s;
+    background-color: 2s linear 5s;
+}
+input[type="submit"]:hover{
+    width: 120px;
+    background-color:rgb(170, 103, 103);
+    transition-duration: 1s;
+    transition-delay:0s;
+}
+input[type="submit"]{
+    animation-name: position;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+/* @keyframes position{
+    from{position:absolute;}
+    75%{left: 1%;}
+    35%{right: 1%;}
+    to{position: static;}
+} */
+

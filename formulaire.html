@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulaire</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/script.js" async></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Inscription</h1>
+        </header>
+            <div class="conteneur">
+                <div class="group">
+                    <form id="form" name="formulaire" method="post" novalidate>
+                        <fieldset>
+                            <legend>Informations personnelles :</legend>
+                            <div class="champs" id="champsNom">
+                                    <label for="nom">Nom :</label>
+                                    <input type="text" name="nom" id="nom" minlength="2" maxlength="25" required>
+                            </div>
+                            <div class="champs">
+                                <label for="prenom">Prenom :</label>
+                                <input type="text" name="prenom" id="prenom" minlength="2" maxlength="25" required>
+                            </div>
+                            <div class="champs">
+                                <label for="email">Email :</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div class="champs">
+                                <label for="age">Age :</label>
+                                <input type="number" name="age" id="age">
+                            </div>
+                            <div class="champs">
+                                <label for="h">Homme</label>
+                                <input type="radio" name="genre" value="homme" id="h">
+                                <label for="f">Femme</label>
+                                <input type="radio" name="genre" value="femme" id="f">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Compétences / expérience :</legend>
+                            <div class="champs">
+                                <label for="html">HTML</label>
+                                <input type="checkbox" name="competence" value="html" id="html">
+                                <label for="CSS">CSS</label>
+                                <input type="checkbox" name="competence" value="css" id="css">
+                                <label for="javascript">javascript</label>
+                                <input type="checkbox" name="competence" value="javascript" id="javascript">
+                                <label for="php">PHP</label>
+                                <input type="checkbox" name="competence" value="php" id="php">
+                                <label for="sql">SQL</label>
+                                <input type="checkbox" name="competence" value="sql" id="sql">
+                                <label for="seo">SEO</label>
+                                <input type="checkbox" name="competence" value="seo" id="seo">
+                            </div>
+                            <div class="champs">
+                                <textarea id="textArea" name="experience" placeholder="Décrivez une expérience pro" cols="30" rows="10" minlength="15" maxlength="500"></textarea>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Validation :</legend>
+                            <div class="champs">
+                                <label for="pass">Choississez un mot de passe :</label>
+                                <input id="password" type="password" name="password" minlength="8" maxlength="15" required>
+                            </div>
+                            <div class="button">
+                                <input id="submit" type="submit" value="Envoyer">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+        </div>
+    </body>
+</html>
